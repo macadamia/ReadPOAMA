@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD5D99521C29009C0026AF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D99511C29009C0026AF6B /* AppDelegate.swift */; };
+		AD5D99541C29009C0026AF6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D99531C29009C0026AF6B /* ViewController.swift */; };
+		AD5D99571C29009C0026AF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5D99551C29009C0026AF6B /* Main.storyboard */; };
+		AD5D995A1C29009C0026AF6B /* ReadPOAMA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD5D99581C29009C0026AF6B /* ReadPOAMA.xcdatamodeld */; };
+		AD5D995C1C29009C0026AF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5D995B1C29009C0026AF6B /* Assets.xcassets */; };
+		AD5D995F1C29009C0026AF6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5D995D1C29009C0026AF6B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD5D994E1C29009C0026AF6B /* ReadPOAMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadPOAMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5D99511C29009C0026AF6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD5D99531C29009C0026AF6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD5D99561C29009C0026AF6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD5D99591C29009C0026AF6B /* ReadPOAMA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReadPOAMA.xcdatamodel; sourceTree = "<group>"; };
+		AD5D995B1C29009C0026AF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD5D995E1C29009C0026AF6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD5D99601C29009C0026AF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD5D994B1C29009C0026AF6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD5D99451C29009C0026AF6B = {
+			isa = PBXGroup;
+			children = (
+				AD5D99501C29009C0026AF6B /* ReadPOAMA */,
+				AD5D994F1C29009C0026AF6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD5D994F1C29009C0026AF6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D994E1C29009C0026AF6B /* ReadPOAMA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD5D99501C29009C0026AF6B /* ReadPOAMA */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D99511C29009C0026AF6B /* AppDelegate.swift */,
+				AD5D99531C29009C0026AF6B /* ViewController.swift */,
+				AD5D99551C29009C0026AF6B /* Main.storyboard */,
+				AD5D995B1C29009C0026AF6B /* Assets.xcassets */,
+				AD5D995D1C29009C0026AF6B /* LaunchScreen.storyboard */,
+				AD5D99601C29009C0026AF6B /* Info.plist */,
+				AD5D99581C29009C0026AF6B /* ReadPOAMA.xcdatamodeld */,
+			);
+			path = ReadPOAMA;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD5D994D1C29009C0026AF6B /* ReadPOAMA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5D99631C29009C0026AF6B /* Build configuration list for PBXNativeTarget "ReadPOAMA" */;
+			buildPhases = (
+				AD5D994A1C29009C0026AF6B /* Sources */,
+				AD5D994B1C29009C0026AF6B /* Frameworks */,
+				AD5D994C1C29009C0026AF6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadPOAMA;
+			productName = ReadPOAMA;
+			productReference = AD5D994E1C29009C0026AF6B /* ReadPOAMA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD5D99461C29009C0026AF6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Neil White";
+				TargetAttributes = {
+					AD5D994D1C29009C0026AF6B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = AD5D99491C29009C0026AF6B /* Build configuration list for PBXProject "ReadPOAMA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD5D99451C29009C0026AF6B;
+			productRefGroup = AD5D994F1C29009C0026AF6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD5D994D1C29009C0026AF6B /* ReadPOAMA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD5D994C1C29009C0026AF6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5D995F1C29009C0026AF6B /* LaunchScreen.storyboard in Resources */,
+				AD5D995C1C29009C0026AF6B /* Assets.xcassets in Resources */,
+				AD5D99571C29009C0026AF6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD5D994A1C29009C0026AF6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5D99541C29009C0026AF6B /* ViewController.swift in Sources */,
+				AD5D995A1C29009C0026AF6B /* ReadPOAMA.xcdatamodeld in Sources */,
+				AD5D99521C29009C0026AF6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD5D99551C29009C0026AF6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD5D99561C29009C0026AF6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD5D995D1C29009C0026AF6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD5D995E1C29009C0026AF6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD5D99611C29009C0026AF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD5D99621C29009C0026AF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD5D99641C29009C0026AF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReadPOAMA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NAW.ReadPOAMA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD5D99651C29009C0026AF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReadPOAMA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NAW.ReadPOAMA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD5D99491C29009C0026AF6B /* Build configuration list for PBXProject "ReadPOAMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D99611C29009C0026AF6B /* Debug */,
+				AD5D99621C29009C0026AF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5D99631C29009C0026AF6B /* Build configuration list for PBXNativeTarget "ReadPOAMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D99641C29009C0026AF6B /* Debug */,
+				AD5D99651C29009C0026AF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD5D99581C29009C0026AF6B /* ReadPOAMA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD5D99591C29009C0026AF6B /* ReadPOAMA.xcdatamodel */,
+			);
+			currentVersion = AD5D99591C29009C0026AF6B /* ReadPOAMA.xcdatamodel */;
+			path = ReadPOAMA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD5D99461C29009C0026AF6B /* Project object */;
+}
