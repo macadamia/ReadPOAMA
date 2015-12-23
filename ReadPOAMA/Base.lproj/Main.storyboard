@@ -92,10 +92,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-fo-lJq">
+                                <rect key="frame" x="20" y="258" width="560" height="322"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="322" id="Hvh-Ab-fFo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q3I-uD-t4h" firstAttribute="leading" secondItem="CaX-Im-DAg" secondAttribute="leading" id="0b9-cN-PgY"/>
+                            <constraint firstItem="Pvb-fo-lJq" firstAttribute="leading" secondItem="Yrc-bE-IDL" secondAttribute="leading" id="15s-NL-EcE"/>
                             <constraint firstItem="bEN-w6-Vhk" firstAttribute="baseline" secondItem="dT2-PX-nxv" secondAttribute="baseline" id="2sl-l1-mUC"/>
                             <constraint firstItem="Yrc-bE-IDL" firstAttribute="top" secondItem="CaX-Im-DAg" secondAttribute="bottom" constant="22" id="5bC-i3-VH9"/>
                             <constraint firstItem="CaX-Im-DAg" firstAttribute="top" secondItem="bGQ-vR-cyZ" secondAttribute="bottom" constant="8" symbolic="YES" id="5q6-yl-3Ny"/>
@@ -108,7 +118,9 @@
                             <constraint firstItem="CaX-Im-DAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jxx-T9-lLj"/>
                             <constraint firstItem="Hhr-7W-cWB" firstAttribute="trailing" secondItem="C1T-Vk-aok" secondAttribute="trailing" id="Lm8-lb-H3j"/>
                             <constraint firstAttribute="leadingMargin" secondItem="CaX-Im-DAg" secondAttribute="leading" id="OiA-yV-Agd"/>
+                            <constraint firstItem="Pvb-fo-lJq" firstAttribute="trailing" secondItem="Yrc-bE-IDL" secondAttribute="trailing" id="RzC-fe-qFN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yrc-bE-IDL" secondAttribute="trailing" id="TuI-3R-3u0"/>
+                            <constraint firstItem="Pvb-fo-lJq" firstAttribute="top" secondItem="Yrc-bE-IDL" secondAttribute="bottom" constant="8" symbolic="YES" id="Uls-ch-6BE"/>
                             <constraint firstItem="bGQ-vR-cyZ" firstAttribute="leading" secondItem="dT2-PX-nxv" secondAttribute="leading" id="Wc9-yA-bIz"/>
                             <constraint firstItem="bGQ-vR-cyZ" firstAttribute="leading" secondItem="un9-i5-mHD" secondAttribute="trailing" constant="18" id="YQB-0J-kpP"/>
                             <constraint firstItem="bEN-w6-Vhk" firstAttribute="top" secondItem="q3I-uD-t4h" secondAttribute="bottom" constant="8" symbolic="YES" id="YfS-fK-GBP"/>
@@ -134,6 +146,7 @@
                         <outlet property="fDay" destination="0qY-m4-Obk" id="f12-9Z-vj1"/>
                         <outlet property="fMth" destination="Hhr-7W-cWB" id="w18-zb-yiP"/>
                         <outlet property="fYear" destination="bGQ-vR-cyZ" id="Wna-Jg-QdH"/>
+                        <outlet property="resultsDisplay" destination="Pvb-fo-lJq" id="rEB-mN-Pjz"/>
                         <outlet property="siteName" destination="un9-i5-mHD" id="SAy-cF-7Qe"/>
                         <outlet property="urlEditDisplay" destination="Yrc-bE-IDL" id="ezW-Cw-duU"/>
                         <outlet property="urldisplay" destination="q3I-uD-t4h" id="Kut-ci-i0l"/>

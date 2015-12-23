@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var urlEditDisplay: UITextField!
     
+    @IBOutlet weak var resultsDisplay: UILabel!
     // a return would need -> return type
     @IBAction func generateURL(sender: UIButton) {
         //local constant starts with let
@@ -68,6 +69,20 @@ class ViewController: UIViewController {
         
         urlEditDisplay.text = url
         
+        let poamaURL = NSURL(string: url)
+        let session = NSURLSession.sharedSession()
+        let dataTask = session.dataTaskWithURL(poamaURL!){
+            (data,response,error) -> Void in
+            
+            if error != nil {
+                print("An Error Occured")
+            } else {
+                print(response!.description)
+            }
+            
+            
+        }
+        dataTask.resume()
     }
 }
 
