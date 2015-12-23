@@ -17,47 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-0c-9vB">
-                                <rect key="frame" x="20" y="28" width="71" height="30"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xmy-1f-ILi">
-                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p3k-Ia-FJ7">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p6a-3g-aGr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-UD-HNr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
-                                                                <state key="normal" title="Get Max T"/>
-                                                                <connections>
-                                                                    <action selector="GetMaxT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4U-Xu-LUE"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wMF-6r-yPg">
+                                <rect key="frame" x="276" y="145" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-Im-DAg">
+                                <rect key="frame" x="251" y="235" width="99" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="5nL-kV-OGi"/>
+                                    <constraint firstAttribute="width" constant="99" id="GUq-Fm-zLf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="5"/>
+                                <state key="normal" title="A Button"/>
+                                <state key="selected" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3I-uD-t4h">
+                                <rect key="frame" x="280" y="75" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HEd-0c-9vB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="4b0-0M-DCL"/>
-                            <constraint firstItem="HEd-0c-9vB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Zxw-PH-1EQ"/>
+                            <constraint firstItem="CaX-Im-DAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jxx-T9-lLj"/>
+                            <constraint firstItem="CaX-Im-DAg" firstAttribute="centerX" secondItem="wMF-6r-yPg" secondAttribute="centerX" id="R7S-Ys-OQD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CaX-Im-DAg" secondAttribute="bottom" constant="338" id="gXr-Cm-gBx"/>
+                            <constraint firstItem="wMF-6r-yPg" firstAttribute="top" secondItem="q3I-uD-t4h" secondAttribute="bottom" constant="49" id="iRf-xf-C0I"/>
+                            <constraint firstItem="CaX-Im-DAg" firstAttribute="top" secondItem="wMF-6r-yPg" secondAttribute="bottom" constant="59" id="kpa-H5-wV2"/>
+                            <constraint firstItem="q3I-uD-t4h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="oEj-l1-157"/>
+                            <constraint firstItem="q3I-uD-t4h" firstAttribute="centerX" secondItem="wMF-6r-yPg" secondAttribute="centerX" id="wO0-OJ-Ge0"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gXr-Cm-gBx"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="GetMaxT" destination="UhX-UD-HNr" id="orB-6i-AeV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421" y="420"/>
+            <point key="canvasLocation" x="344" y="177"/>
         </scene>
     </scenes>
 </document>

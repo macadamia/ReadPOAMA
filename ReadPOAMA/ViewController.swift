@@ -11,11 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
 
-    @IBAction func GetMaxT(sender: UIButton) {
-        let url = "http://www.google.com"
-        print(url)
-    }
-
 
 }
 
