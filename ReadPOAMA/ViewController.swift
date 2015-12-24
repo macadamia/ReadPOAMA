@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var fMth: UITextField!
     @IBOutlet weak var fDay: UITextField!
     
+    @IBOutlet weak var versionNumber: UILabel!
+    
 
     @IBOutlet weak var siteName: UITextField!
     
