@@ -72,22 +72,17 @@ class ViewController: UIViewController {
         
         urlEditDisplay.text = url
         
-        let poamaURL = NSURL(string: url)
-        let session = NSURLSession.sharedSession()
-        let dataTask = session.dataTaskWithURL(poamaURL!){
-            (data,response,error) -> Void in
+        if let poamaURL = NSURL(string: url) {
+            let error: NSError?
+            let theData: NSString = try NSString(initWithContentsOfURL: poamaURL, encoding: NSUTF8StringEncoding, error: error)
             
-            if error != nil {
-                print("An Error Occured")
+            if let error = error {
+                print("Error: \(error)")
             } else {
-                print(response!.description)
+                resultsDisplay.text = theData as String
             }
             
-            data!.
-            
-            
         }
-        dataTask.resume()
     }
 }
 
