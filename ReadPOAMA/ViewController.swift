@@ -22,10 +22,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var fMth: UITextField!
     @IBOutlet weak var fDay: UITextField!
     
-    @IBOutlet weak var versionNumber: UILabel!
     
 
     @IBOutlet weak var siteName: UITextField!
+    
     
     
     @IBOutlet weak var urlEditDisplay: UITextField!
@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         
         var startLong: Int
         var startLat: Int
+        
 
         
         switch site {
@@ -81,6 +82,8 @@ class ViewController: UIViewController {
             } else {
                 print(response!.description)
             }
+            
+            data!.
             
             
         }
