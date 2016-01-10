@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2821CCC91C34B88A00D987FA /* dagc_20151220.nc.ascii.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2821CCC81C34B88A00D987FA /* dagc_20151220.nc.ascii.txt */; };
 		AD5D99521C29009C0026AF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D99511C29009C0026AF6B /* AppDelegate.swift */; };
 		AD5D99541C29009C0026AF6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D99531C29009C0026AF6B /* ViewController.swift */; };
 		AD5D99571C29009C0026AF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5D99551C29009C0026AF6B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2821CCC81C34B88A00D987FA /* dagc_20151220.nc.ascii.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dagc_20151220.nc.ascii.txt; sourceTree = "<group>"; };
 		AD5D994E1C29009C0026AF6B /* ReadPOAMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadPOAMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5D99511C29009C0026AF6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD5D99531C29009C0026AF6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		AD5D99501C29009C0026AF6B /* ReadPOAMA */ = {
 			isa = PBXGroup;
 			children = (
+				2821CCC81C34B88A00D987FA /* dagc_20151220.nc.ascii.txt */,
 				AD5D99511C29009C0026AF6B /* AppDelegate.swift */,
 				AD5D99531C29009C0026AF6B /* ViewController.swift */,
 				AD5D99551C29009C0026AF6B /* Main.storyboard */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5D995F1C29009C0026AF6B /* LaunchScreen.storyboard in Resources */,
+				2821CCC91C34B88A00D987FA /* dagc_20151220.nc.ascii.txt in Resources */,
 				AD5D995C1C29009C0026AF6B /* Assets.xcassets in Resources */,
 				AD5D99571C29009C0026AF6B /* Main.storyboard in Resources */,
 			);

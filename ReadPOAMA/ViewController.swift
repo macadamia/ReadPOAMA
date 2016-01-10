@@ -24,13 +24,20 @@ class ViewController: UIViewController {
     
     
 
+    @IBOutlet weak var resultsScoll: UILabel!
     @IBOutlet weak var siteName: UITextField!
     
     
+    @IBOutlet weak var ResultsView: UIScrollView!
     
     @IBOutlet weak var urlEditDisplay: UITextField!
     
-    @IBOutlet weak var resultsDisplay: UILabel!
+    
+    // dagc_20151220.nc.ascii.txt
+    let useTxt = true
+    
+    
+    
     // a return would need -> return type
     @IBAction func generateURL(sender: UIButton) {
         //local constant starts with let
@@ -41,7 +48,9 @@ class ViewController: UIViewController {
         var startLong: Int
         var startLat: Int
         
-
+        
+        let bundle = NSBundle.mainBundle()
+        
         
         switch site {
         case "Twba":
@@ -62,24 +71,51 @@ class ViewController: UIViewController {
         fDate = fDate + String(format: "%02d", arguments: [mth!])
         fDate = fDate + String(format: "%02d", arguments: [day!])
         
-        url = url + fDate
-        url = url + ".nc.ascii?tsfmax"
-        url = "\(url)[0:60][\(startLat):\(startLat)][\(startLong):\(startLong)]"
-        
+        if useTxt {
+            url = "dagc_20151220.nc.ascii"
+        } else  {
+            url = url + fDate
+            url = url + ".nc.ascii?tsfmax"
+            url = "\(url)[0:60][\(startLat):\(startLat)][\(startLong):\(startLong)]"
+        }
 
         print(url)
         urldisplay.text = url
         
         urlEditDisplay.text = url
+        var maxTemperatures = [Float] ()
         
-        if let poamaURL = NSURL(string: url) {
-            let error: NSError?
-            let theData: NSString = try NSString(initWithContentsOfURL: poamaURL, encoding: NSUTF8StringEncoding, error: error)
-            
-            if let error = error {
-                print("Error: \(error)")
-            } else {
-                resultsDisplay.text = theData as String
+        let poamaURL = NSURL(string: url)
+        
+        if poamaURL != nil && !useTxt {
+            do {
+                let contents = try NSString(contentsOfURL: poamaURL!, usedEncoding: nil)
+                print(contents)
+                resultsScoll.text = contents as String
+
+            } catch {
+                print("contents could not be loaded from url")
+            }
+        } else {
+            let poamaURL =  bundle.pathForResource(url, ofType: "txt")
+            var stringTemps: String = ""
+            do {
+                let contents = try NSString(contentsOfFile: poamaURL!, usedEncoding: nil)
+                print(contents)
+                let lines = contents.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+                print("There are \(lines.count) lines in the file")
+                //data starts 2 lines after ---------------------------------------------
+                let startOfData = lines.indexOf("---------------------------------------------")! + 2
+                for i in startOfData...startOfData+60 {
+                    // split on comma
+                    let temperature = NSNumberFormatter().numberFromString(lines[i].componentsSeparatedByString(",")[1])!.floatValue - 273.15
+                    maxTemperatures.append(temperature)
+                    stringTemps = stringTemps + "," + "\(temperature)"
+                }
+                resultsScoll.text = stringTemps
+                
+            } catch {
+                print("contents could not be loaded from file")
             }
             
         }
