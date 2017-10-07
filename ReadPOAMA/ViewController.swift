@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     
     // a return would need -> return type
-    @IBAction func generateURL(sender: UIButton) {
+    @IBAction func generateURL(_ sender: UIButton) {
         //local constant starts with let
         // generally don't have to use upper case etc to denote constants
         var url = "http://opendap.bom.gov.au:8080/thredds/dodsC/poama/realtime/daily/m24a/emn/dagc_"
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         var startLat: Int
         
         
-        let bundle = NSBundle.mainBundle()
+        let bundle = Bundle.main
         
         
         switch site {
@@ -85,11 +85,11 @@ class ViewController: UIViewController {
         urlEditDisplay.text = url
         var maxTemperatures = [Float] ()
         
-        let poamaURL = NSURL(string: url)
+        let poamaURL = URL(string: url)
         
         if poamaURL != nil && !useTxt {
             do {
-                let contents = try NSString(contentsOfURL: poamaURL!, usedEncoding: nil)
+                let contents = try NSString(contentsOf: poamaURL!, usedEncoding: nil)
                 print(contents)
                 resultsScoll.text = contents as String
 
@@ -97,18 +97,18 @@ class ViewController: UIViewController {
                 print("contents could not be loaded from url")
             }
         } else {
-            let poamaURL =  bundle.pathForResource(url, ofType: "txt")
+            let poamaURL =  bundle.path(forResource: url, ofType: "txt")
             var stringTemps: String = ""
             do {
                 let contents = try NSString(contentsOfFile: poamaURL!, usedEncoding: nil)
                 print(contents)
-                let lines = contents.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+                let lines = contents.components(separatedBy: CharacterSet.newlines)
                 print("There are \(lines.count) lines in the file")
                 //data starts 2 lines after ---------------------------------------------
-                let startOfData = lines.indexOf("---------------------------------------------")! + 2
+                let startOfData = lines.index(of: "---------------------------------------------")! + 2
                 for i in startOfData...startOfData+60 {
                     // split on comma
-                    let temperature = NSNumberFormatter().numberFromString(lines[i].componentsSeparatedByString(",")[1])!.floatValue - 273.15
+                    let temperature = NumberFormatter().number(from: lines[i].components(separatedBy: ",")[1])!.floatValue - 273.15
                     maxTemperatures.append(temperature)
                     stringTemps = stringTemps + "," + "\(temperature)"
                 }
