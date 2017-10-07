@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  ReadPOAMA
-//
+// 
 //  Created by Neil White on 22/12/2015.
 //  Copyright © 2015 Neil White. All rights reserved.
 //
@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     
     
 
-    @IBOutlet weak var resultsScoll: UILabel!
+    @IBOutlet weak var ResultsScroll: UITextField!
+    
     @IBOutlet weak var siteName: UITextField!
     
     
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
     
     
     // dagc_20151220.nc.ascii.txt
-    let useTxt = true
+    let useTxt = false
     
     
     
@@ -91,7 +92,7 @@ class ViewController: UIViewController {
             do {
                 let contents = try NSString(contentsOf: poamaURL!, usedEncoding: nil)
                 print(contents)
-                resultsScoll.text = contents as String
+                ResultsScroll.text = contents as String
 
             } catch {
                 print("contents could not be loaded from url")
@@ -112,7 +113,7 @@ class ViewController: UIViewController {
                     maxTemperatures.append(temperature)
                     stringTemps = stringTemps + "," + "\(temperature)"
                 }
-                resultsScoll.text = stringTemps
+                ResultsScroll.text = stringTemps
                 
             } catch {
                 print("contents could not be loaded from file")
